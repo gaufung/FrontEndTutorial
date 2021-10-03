@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.static {
+            position: static;
+            border: 3px solid green;
+        }
+
+        div.relative {
+            position: relative;
+            left: 30px;
+            border: 2px solid blue;
+        }
+
+        div.fixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            border: 3px solid yellow;
+        }
+
+        div.absolute {
+            position: absolute;
+            top: 80px;
+            right: 0;
+            width: 200px;
+            height: 100px;
+            border: 3px solid #73AD21;
+        }
+
+        div.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: green;
+  border: 2px solid #4CAF50;
+}
+    </style>
+</head>
+<body>
+    <div class="static">
+        This is div elements has position: static;
+    </div>
+
+    <div class="relative">
+        this is div elements has position: relative;
+    </div>
+
+    <div class="fixed">
+        This div element has position: fixed; 
+    </div>
+
+    <div class="absolute">
+        this div element has position: absolute;
+    </div>
+
+    <div class="sticky">
+        this div element has position: sticky;
+    </div>
+</body>
+</html>
