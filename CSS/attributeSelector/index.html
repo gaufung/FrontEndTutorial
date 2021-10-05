@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a[target] {
+            background-color: yellow;
+        }
+        a[target="_blank"] {
+            background-color: red;
+        }
+        [title ~= "flower"] {
+            border: 5px solid yellow;
+        }
+        [class|="top"]
+        {
+            background-color: green;
+        }
+        [class^="blue"]{
+            background-color: burlywood;
+        }
+        [class$="test"] {
+  background: yellow;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <a href="#">a 1</a>
+        <a target="_blank">a target</a>
+        <a target="done">a taget done</a>
+    </div>
+
+    <div title="flower animal">
+
+    </div>
+
+    <div class="flower top">
+        <span>flow top</span>
+    </div>
+
+    <div class="top">
+        <span>flow top</span>
+    </div>
+    <p class="blue-text">Hello world!</p>
+<p class="bluecontent">Are you learning CSS?</p>
+<p class="mytest">This is some text in a paragraph.</p>
+</body>
+</html>
